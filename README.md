@@ -1,8 +1,18 @@
 # dsh-prompt-profile
 
-Reusable Markdown prompt profiles for DeepSeek Harness. A profile can select a provider, model, and reasoning effort for one turn, render command arguments into its body, and restore the previous selection afterward.
+![dsh-prompt-profile hero](assets/hero.png)
 
-English | [中文](README.zh.md)
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/BrambleXu/dsh-prompt-profile?style=flat-square" alt="MIT license"></a>
+  <a href="package.json"><img src="https://img.shields.io/badge/Node.js-%5E22.19%20%7C%20%3E%3D24-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js ^22.19 or >=24"></a>
+  <a href="package.json"><img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript 5.9"></a>
+  <a href="package.json"><img src="https://img.shields.io/badge/tests-Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" alt="Tests with Vitest"></a>
+  <a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a>
+</p>
+
+<p align="center">English | <a href="README.zh.md">中文</a></p>
+
+Reusable Markdown prompt profiles for DeepSeek Harness. A profile can select a provider, model, and reasoning effort for one turn, render command arguments into its body, and restore the previous selection afterward.
 
 ## Why this exists 💡
 
