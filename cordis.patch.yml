@@ -1,0 +1,6 @@
+- insert:
+    - id: dsh-prompt-profile
+      name: dsh-prompt-profile
+      config:
+        userDirectory: ~/.dsh/prompt-profiles
+        projectDirectory: .dsh/prompt-profiles
