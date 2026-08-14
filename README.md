@@ -2,7 +2,21 @@
 
 Reusable Markdown prompt profiles for DeepSeek Harness. A profile can select a provider, model, and reasoning effort for one turn, render command arguments into its body, and restore the previous selection afterward.
 
-## Install
+English | [中文](README.zh.md)
+
+## Why this exists 💡
+
+Model choice and review instructions are often repeated across sessions. `dsh-prompt-profile` turns those combinations into small, reusable Markdown profiles that can be invoked for one turn and then leave the Agent's previous model selection intact.
+
+## Features ✨
+
+- Discover profiles from user and project directories, with project profiles taking precedence.
+- Substitute positional arguments into profile bodies with shell-style placeholders.
+- Select a provider, model, and reasoning effort for one turn.
+- Restore the previous Agent selection automatically or opt out per profile.
+- List available profiles and invoke nested profiles by slash-separated names.
+
+## Install 📦
 
 ```sh
 dsh plugin --profile demo add ./dsh-prompt-profile
@@ -23,7 +37,7 @@ Review $1 for correctness, regressions, and missing tests. Extra context: ${@:2}
 
 Project profiles override user profiles with the same relative name.
 
-## Use
+## Use 🚀
 
 ```text
 /prompt-profile list
@@ -41,7 +55,7 @@ Supported placeholders:
 | `${@:N}` | Arguments from position N |
 | `${@:N:L}` | L arguments from position N |
 
-## Frontmatter
+## Frontmatter 🧾
 
 | Field | Required | Meaning |
 | --- | --- | --- |
@@ -53,7 +67,7 @@ Supported placeholders:
 
 Omit both `provider` and `model` to use the current agent selection.
 
-## Configure
+## Configure ⚙️
 
 ```yaml
 - id: dsh-prompt-profile
@@ -63,21 +77,21 @@ Omit both `provider` and `model` to use the current agent selection.
     projectDirectory: .dsh/prompt-profiles
 ```
 
-## Develop
+## Develop 🧑‍💻
 
 ```sh
 pnpm install
 pnpm run check
 ```
 
-## Scope
+## Scope 🎯
 
 Version 0.1 intentionally omits prompt chains, loops, skill injection, subagents, worktrees, and best-of-N orchestration. Those features should be added only when Harness extension points can preserve their lifecycle and durable-session semantics.
 
-## License
+## License 📄
 
 MIT
 
-## Credits
+## Credits 🙏
 
 The core idea comes from [`pi-prompt-template-model`](https://github.com/nicobailon/pi-prompt-template-model). This first Harness-native release focuses on the smallest useful unit: deterministic discovery, argument substitution, scoped model routing, and restoration.
