@@ -97,6 +97,8 @@ pnpm install
 pnpm run check
 ```
 
+修改源码后，将生成的 `lib/` 文件一起提交，确保 Git 安装在执行构建脚本之前就包含声明的包入口。
+
 ## 范围 🎯
 
 0.1 版本有意不包含 prompt chain、循环、skill 注入、subagent、worktree 和 best-of-N 编排。只有当 Harness 扩展点能够保留其生命周期和持久会话语义时，才应添加这些功能。

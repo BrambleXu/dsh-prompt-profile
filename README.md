@@ -97,6 +97,8 @@ pnpm install
 pnpm run check
 ```
 
+Commit the generated `lib/` files with source changes so Git installs include the declared package entry before build scripts run.
+
 ## Scope 🎯
 
 Version 0.1 intentionally omits prompt chains, loops, skill injection, subagents, worktrees, and best-of-N orchestration. Those features should be added only when Harness extension points can preserve their lifecycle and durable-session semantics.
